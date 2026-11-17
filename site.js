@@ -1,4 +1,4 @@
-/* Mazo website v1.3 */
+/* Mazo website v1.4 */
 (function () {
   // Nomor WhatsApp (format internasional, tanpa + dan tanpa 0 di depan)
   var WA = "628211309852";
@@ -61,6 +61,12 @@
         err.hidden = true;
       }
     });
+    var sel = $("#produk"), hash = (location.hash || "").replace("#", "");
+    if (sel && hash) {
+      $$("option", sel).forEach(function (o) {
+        if (o.getAttribute("data-id") === hash) { sel.value = o.value; }
+      });
+    }
     build();
   }
 
