@@ -1,4 +1,4 @@
-/* Mazo website v1.2
+/* Mazo website v1.3
    Konsep layout: bentuk bulat dan lembut mengikuti logo; hero biru navy dengan kartu putih
    melayang sebagai pusat perhatian, bagian lain tenang dan putih supaya konten mudah dibaca. */
 :root{
@@ -287,3 +287,8 @@ form .btn{width:100%;margin-top:20px}
   .pop{animation:none}
   .btn,.pcard{transition:none}
 }
+
+/* v1.3 */
+.hero-lead strong{color:#fff;font-weight:800}
+a.chip{transition:border-color .15s,background .15s}
+a.chip:hover{border-color:var(--navy);background:var(--sky)}

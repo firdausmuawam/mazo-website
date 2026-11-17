@@ -1,7 +1,7 @@
-/* Mazo website v1.2 */
+/* Mazo website v1.3 */
 (function () {
-  // TODO: ganti nomor WhatsApp (format internasional, tanpa + dan tanpa 0 di depan, contoh 6281234567890)
-  var WA = "6281234567890";
+  // Nomor WhatsApp (format internasional, tanpa + dan tanpa 0 di depan)
+  var WA = "628211309852";
 
   function $(s, c) { return (c || document).querySelector(s); }
   function $$(s, c) { return Array.prototype.slice.call((c || document).querySelectorAll(s)); }
